@@ -40,13 +40,11 @@ export function Header() {
       <Section className="py-0 mt-5 mb-5" containerClassName="relative z-50 ">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <NavLink to="/" onClick={toggleMenu}>
             <img
               src={Logo}
               alt="Logo"
               className="w-40 h-auto md:w-50 lg:w-60"
             />
-            </NavLink>
           </div>
 
           <nav className="hidden md:flex transparent items-center space-x-8">
