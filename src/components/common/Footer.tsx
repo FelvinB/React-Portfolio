@@ -1,3 +1,4 @@
+import { Button } from "@/components/design/button";
 import { cn } from "@/lib/cn";
 
 export function Footer() {
@@ -24,20 +25,18 @@ export function Footer() {
         </p>
 
         {/* Back to Top */}
-        <a
-          href="#top"
-          className={cn(
-            "rounded-full border border-gray-300",
-            "bg-white px-5 py-2",
-            "text-sm font-semibold text-gray-600",
-            "shadow-sm",
-            "transition-all duration-300",
-            "hover:-translate-y-1",
-            "hover:bg-gray-900 hover:text-white",
-            "hover:shadow-md"
-          )}
-        >
-          Back to Top ↑
+        <a href="#top">
+          <Button
+            variant="primary"
+            className={cn(
+              "px-5 py-2",
+              "text-sm",
+              "transition-all duration-300",
+              "hover:-translate-y-1"
+            )}
+          >
+            Back to Top ↑
+          </Button>
         </a>
 
         {/* Founded */}
